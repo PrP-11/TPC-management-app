@@ -163,42 +163,42 @@ INSERT INTO `company_constraints` (`current_id`, `can_apply_id`, `num`) VALUES (
 
 /* Add current degree and branch data for testing */
 INSERT INTO `branch` (`branch_id`, `branch_name`) VALUES
-('1', 'CS'),
-('2', 'EE'),
-('3', 'ME'),
-('4', 'CH');
+('Bdtl1', 'CS'),
+('Bdtl2', 'EE'),
+('Bdtl3', 'ME'),
+('Bdtl4', 'CH');
 
 INSERT INTO `degree` (`degree_id`, `degree_name`) VALUES
-('1', 'btech'),
-('2', 'mtech');
+('Bdtl1', 'btech'),
+('Bdtl2', 'mtech');
 
 INSERT INTO `degree_branch` (`db_id`, `degree_id`, `branch_id`) VALUES
-('1', '1', '1'),
-('2', '1', '2'),
-('3', '1', '3'),
-('4', '1', '4');
+('Bdtl1', 'Bdtl1', 'Bdtl1'),
+('Bdtl2', 'Bdtl1', 'Bdtl2'),
+('Bdtl3', 'Bdtl1', 'Bdtl3'),
+('Bdtl4', 'Bdtl1', 'Bdtl4');
 
 /* Dummy student_data for testing */
 INSERT INTO `students` (`roll_number`, `password`, `user_role`, `username`) VALUES
-('1', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '1'),
-('2', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '2'),
-('3', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '3'),
-('4', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '4'),
-('5', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '5'),
-('6', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '6'),
-('7', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '7'),
-('8', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '8'),
-('9', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '9'),
-('10', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', '10');
+('1', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's1'),
+('2', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's2'),
+('3', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's3'),
+('4', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's4'),
+('5', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's5'),
+('6', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's6'),
+('7', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's7'),
+('8', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's8'),
+('9', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's9'),
+('10', '356a192b7913b04c54574d18c28d46e6395428ab', 'student', 's10');
 
 INSERT INTO `students_data` (`roll_number`, `current_cpi`, `db_id`, `profile_pic`, `resume_url`, `resume_file`, `mobile_number`, `final_accepted_offer`, `job_offers`, `skype_Id`, `gmail_Id`, `emergency_number`, `year_of_enroll`) VALUES
-('1', 7, '1', NULL, NULL, NULL, NULL, 'a1', 'Bdtl61', NULL, 'a3@b.com', '32552', 2017),
-('2', NULL, '1', NULL, NULL, NULL, NULL, 'b1', 'KnAtiB', NULL, NULL, NULL, 2017),
-('3', NULL, '1', NULL, NULL, NULL, NULL, '', 'KnAtiB', NULL, NULL, NULL, 2017),
-('4', NULL, '2', NULL, NULL, NULL, NULL, 'b2', 'Hiakm6', NULL, NULL, NULL, 2017),
-('5', NULL, '3', NULL, NULL, NULL, NULL, 'a1', 'Bdtl61', NULL, NULL, NULL, 2017),
-('6', NULL, '3', NULL, NULL, NULL, NULL, '', '', NULL, NULL, NULL, 2017),
-('7', NULL, '4', NULL, NULL, NULL, NULL, 'b2', 'Hiakm6', NULL, NULL, NULL, 2017),
-('8', NULL, '4', NULL, NULL, NULL, NULL, 'b2', '', NULL, NULL, NULL, 2017),
-('9', NULL, '4', NULL, NULL, NULL, NULL, '', 'Hiakm6', NULL, NULL, NULL, 2017),
-('10', NULL, '4', NULL, NULL, NULL, NULL, '', '', NULL, NULL, NULL, 2017);
+('1', 7, 'Bdtl1', NULL, NULL, NULL, NULL, 'a1', 'Bdtl61', NULL, 'a3@b.com', '32552', 2017),
+('2', NULL, 'Bdtl1', NULL, NULL, NULL, NULL, 'b1', 'KnAtiB', NULL, NULL, NULL, 2017),
+('3', NULL, 'Bdtl1', NULL, NULL, NULL, NULL, '', 'KnAtiB', NULL, NULL, NULL, 2017),
+('4', NULL, 'Bdtl2', NULL, NULL, NULL, NULL, 'b2', 'Hiakm6', NULL, NULL, NULL, 2017),
+('5', NULL, 'Bdtl3', NULL, NULL, NULL, NULL, 'a1', 'Bdtl61', NULL, NULL, NULL, 2017),
+('6', NULL, 'Bdtl3', NULL, NULL, NULL, NULL, '', '', NULL, NULL, NULL, 2017),
+('7', NULL, 'Bdtl4', NULL, NULL, NULL, NULL, 'b2', 'Hiakm6', NULL, NULL, NULL, 2017),
+('8', NULL, 'Bdtl4', NULL, NULL, NULL, NULL, 'b2', '', NULL, NULL, NULL, 2017),
+('9', NULL, 'Bdtl4', NULL, NULL, NULL, NULL, '', 'Hiakm6', NULL, NULL, NULL, 2017),
+('10', NULL, 'Bdtl4', NULL, NULL, NULL, NULL, '', '', NULL, NULL, NULL, 2017);
